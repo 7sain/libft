@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:37:41 by hualhash          #+#    #+#             */
-/*   Updated: 2022/09/25 16:17:12 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/09/25 16:18:57 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,4 +25,4 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	dst[len] = 0;
 	return (strlen(src));
 }
-int mina
+

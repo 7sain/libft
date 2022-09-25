@@ -6,20 +6,20 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:38:39 by hualhash          #+#    #+#             */
-/*   Updated: 2022/09/24 16:38:40 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/09/25 17:24:52 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlen (const char *s)
+size_t	ft_strlen(const char *s)
 {
-    size_t i;
+	size_t	i;
 
-    i = 0;
-    while(s[i] != 0)
-    i++;
-    return (i);
+	i = 0;
+	while (s[i] != 0)
+	i++;
+	return (i);
 }
 
 

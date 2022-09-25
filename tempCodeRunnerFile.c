@@ -1,1 +1,1 @@
-qual
+return (0);

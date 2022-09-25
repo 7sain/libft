@@ -6,22 +6,22 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:37:32 by hualhash          #+#    #+#             */
-/*   Updated: 2022/09/24 16:54:17 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/09/25 16:56:25 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memset (void *b, int c, size_t len)
+void	*ft_memset(void *b, int c, size_t len)
 {
-size_t i;
+	size_t	i;
 
 i = 0;
-while (i < len)
-{
+	while (i < len)
+	{
 ((unsigned char *)b)[i++] = c;
-}
-return (b);
+	}
+	return (b);
 }
 
 // C program to demonstrate working of memset()

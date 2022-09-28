@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:37:20 by hualhash          #+#    #+#             */
-/*   Updated: 2022/09/25 23:31:29 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/09/26 18:01:37 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 int main () {
    const char str[] = "http://www.tutorialspoint.com";
-   const char ch = 'l';
+   const char ch = 'w';
    char *ret;
 
    ret = ft_memchr(str, ch, strlen(str));

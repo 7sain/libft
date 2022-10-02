@@ -1,43 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/24 16:37:35 by hualhash          #+#    #+#             */
-/*   Updated: 2022/09/29 17:00:38 by hualhash         ###   ########.fr       */
+/*   Created: 2022/09/28 16:10:49 by hualhash          #+#    #+#             */
+/*   Updated: 2022/09/28 20:00:29 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+char *ft_strdup(const char *s1)
 {
-	char	*str;
+	int i;
+	int len;
+	char *out;
 
-	str = (char *)s;
-	while (*str != c)
+	i = 0;
+	len = strlen(s1);
+	out = malloc(sizeof((*s1) * (len)));
+
+	while (i <= len)
 	{
-		if (*str == '\0')
-		{
-			return (NULL);
-		}
-	str++;
+		out[i] = s1[i];
+		i++;
 	}
-	return (str);
-
-
+	return (out);
 }
 
-int main () {
-   const char str[] = "http://www.tutorialspoint.com";
-   const char ch = 't';
-   char *ret;
-
-   ret = ft_strchr(str, ch);
-
-   printf("String after |%c| is - |%s|\n", ch, ret);
-   
-   return(0);
+int main()
+{
+    char source[] = "GeeksForGeeks";
+ 
+    // A copy of source is created dynamically
+    // and pointer to copy is returned.
+    char* target = ft_strdup(source);
+ 
+    printf("%s", target);
+    return 0;
 }

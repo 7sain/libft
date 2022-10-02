@@ -1,43 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/24 16:37:35 by hualhash          #+#    #+#             */
-/*   Updated: 2022/09/29 17:00:38 by hualhash         ###   ########.fr       */
+/*   Created: 2022/09/28 20:22:40 by hualhash          #+#    #+#             */
+/*   Updated: 2022/09/28 20:34:16 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+char *ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char	*str;
+	size_t	i;
+	size_t	j;
+	char* sub;
 
-	str = (char *)s;
-	while (*str != c)
+	i = 0;
+	j = 0;
+	if (!s || !(sub = (char*)malloc(sizeof(char) * (len + 1))))
+		return (NULL);
+	while (s[i])
 	{
-		if (*str == '\0')
+		if (i >= start && j < len)
 		{
-			return (NULL);
+			sub[j] = s[i];
+			j++;
 		}
-	str++;
+		i++;
 	}
-	return (str);
-
-
+	sub[j] = '\0';
+	return (sub);
 }
 
-int main () {
-   const char str[] = "http://www.tutorialspoint.com";
-   const char ch = 't';
-   char *ret;
+int main()
+{
+	char* str;
 
-   ret = ft_strchr(str, ch);
+	str = ft_substr("Hello, 42Seoul!", 0, 15);
+	printf("%s\n", str);
 
-   printf("String after |%c| is - |%s|\n", ch, ret);
-   
-   return(0);
+	return 0;
 }

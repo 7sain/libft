@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:37:09 by hualhash          #+#    #+#             */
-/*   Updated: 2022/09/26 18:04:48 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/02 19:52:26 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	ft_bzero(void *s, size_t n)
 	}
 }
 
-int main(int argc, char const *argv[])
+int main()
 {
     char s[11] = "Hello World";
     ft_bzero(s, 1);

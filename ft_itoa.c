@@ -6,13 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/02 15:40:11 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/02 15:41:31 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/02 20:02:03 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char *ft_itoa(int n)
-{
-	
-}

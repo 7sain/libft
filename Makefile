@@ -46,7 +46,7 @@ $(NAME): $(OBJ)
 $(OBJ): $(SRC)
 $(CC) $(CFLAGS) $(SRC)
 clean:
-    rm -f $(OBJ)
+	rm -f $(OBJ)
 fclean: clean
     rm -f $(NAME)
 re: fclean all  

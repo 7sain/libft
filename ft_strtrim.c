@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 14:49:29 by hualhash          #+#    #+#             */
-/*   Updated: 2022/09/29 17:15:47 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/04 22:38:12 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,9 +34,9 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (str);
 }
 
-int main()
-{
-	printf("%s\n", ft_strtrim("abqbc", "abc"));
-	printf("%s\n", ft_strtrim("xavocadoyz", "xyz"));
-	return (0);
-}
+// int main()
+// {
+// 	printf("%s\n", ft_strtrim("abqbc", "abc"));
+// 	printf("%s\n", ft_strtrim("xavocadoyz", "xyz"));
+// 	return (0);
+// }

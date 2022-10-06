@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 20:22:40 by hualhash          #+#    #+#             */
-/*   Updated: 2022/09/28 20:34:16 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/04 22:38:16 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,12 +35,12 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
 	return (sub);
 }
 
-int main()
-{
-	char* str;
+// int main()
+// {
+// 	char* str;
 
-	str = ft_substr("Hello, 42Seoul!", 0, 15);
-	printf("%s\n", str);
+// 	str = ft_substr("Hello, 42Seoul!", 0, 15);
+// 	printf("%s\n", str);
 
-	return 0;
-}
+// 	return 0;
+// }

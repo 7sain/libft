@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/22 21:10:13 by hualhash          #+#    #+#             */
-/*   Updated: 2022/09/24 20:58:08 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/04 22:37:07 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,13 @@ int ft_isprint(int c)
 }
 
 
-#include <ctype.h>
-#include <stdio.h>
-int main()
-{
-   int c;
-   for(c = 1; c <= 127; ++c)
-   	if (ft_isprint(c)!= 0)
-             printf("%c ", c);
-   return 0;
-}
+// #include <ctype.h>
+// #include <stdio.h>
+// int main()
+// {
+//    int c;
+//    for(c = 1; c <= 127; ++c)
+//    	if (ft_isprint(c)!= 0)
+//              printf("%c ", c);
+//    return 0;
+// }

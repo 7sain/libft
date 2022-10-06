@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:37:23 by hualhash          #+#    #+#             */
-/*   Updated: 2022/09/25 23:41:34 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/06 23:31:03 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	size_t	i;
-	const char	*ss1;
-	const char	*ss2;
+	unsigned char	*ss1;
+	unsigned char	*ss2;
 
 	i = 0;
-	ss1 = (const char *)s1;
-	ss2 = (const char *)s2;
+	ss1 = (unsigned char *)s1;
+	ss2 = (unsigned char *)s2;
 	while (i < n)
 	{
 		if (ss1[i] != ss2[i])
@@ -32,23 +32,23 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	return (0);
 }
 
-int main () {
-   char str1[15];
-   char str2[15];
-   int ret;
+// int main () {
+//    char str1[15];
+//    char str2[15];
+//    int ret;
 
-   memcpy(str1, "ABCDEF", 6);
-   memcpy(str2, "ABCDEF", 6);
+//    memcpy(str1, "ABCDEF", 6);
+//    memcpy(str2, "ABCDEF", 6);
 
-   ret = ft_memcmp(str1, str2, 5);
+//    ret = ft_memcmp(str1, str2, 5);
 
-   if(ret > 0) {
-      printf("str2 is less than str1");
-   } else if(ret < 0) {
-      printf("str1 is less than str2");
-   } else {
-      printf("str1 is equal to str2");
-   }
+//    if(ret > 0) {
+//       printf("str2 is less than str1");
+//    } else if(ret < 0) {
+//       printf("str1 is less than str2");
+//    } else {
+//       printf("str1 is equal to str2");
+//    }
    
-   return(0);
-}
+//    return(0);
+// }

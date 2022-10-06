@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hualhash <hualhash@student.42abudhabi.ae>  +#+  +:+       +#+        */
+/*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/22 18:30:27 by hualhash          #+#    #+#             */
-/*   Updated: 2022/09/22 18:45:15 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/04 22:36:53 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,19 +24,19 @@ int ft_isalpha (int c)
     
 }
 
-#include <stdio.h>
-#include <ctype.h>
-int main()
-{
-    char c;
+// #include <stdio.h>
+// #include <ctype.h>
+// int main()
+// {
+//     char c;
 
-    printf("Enter a character u stupid: ");
-    scanf("%c", &c);
+//     printf("Enter a character u stupid: ");
+//     scanf("%c", &c);
 
-    if (ft_isalpha(c) == 0)
-         printf("%c is not an alphabet u stuppid.", c);
-    else
-         printf("%c is an alphabet u stupid.", c);
+//     if (ft_isalpha(c) == 0)
+//          printf("%c is not an alphabet u stuppid.", c);
+//     else
+//          printf("%c is an alphabet u stupid.", c);
 
-    return 0;
-}
+//     return 0;
+// }

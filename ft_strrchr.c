@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:38:47 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/02 19:51:24 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/04 22:38:08 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,14 +30,14 @@ char	*ft_strrchr(const char *s, int c)
 	return (0);
 }
 
-int main () {
-   const char str[] = "http://www.tutorialspoint.com";
-   const char ch = 'c';
-   char *ret;
+// int main () {
+//    const char str[] = "http://www.tutorialspoint.com";
+//    const char ch = 'c';
+//    char *ret;
 
-   ret = ft_strrchr(str, ch);
+//    ret = ft_strrchr(str, ch);
 
-   printf("String after |%c| is - |%s|\n", ch, ret);
+//    printf("String after |%c| is - |%s|\n", ch, ret);
    
-   return(0);
-}
+//    return(0);
+// }

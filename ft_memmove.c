@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:37:30 by hualhash          #+#    #+#             */
-/*   Updated: 2022/09/25 23:19:56 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/06 23:27:10 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	i = 0;
 	p_dst = (char *)dst;
 	p_src = (char *)src;
+	if (!dst && !src)
+		return (0);
 	if (p_dst > p_src)
 		while (len > 0)
 		{
@@ -36,13 +38,13 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	return (dst);
 }
 
-int main () {
-   char dest[] = "oldstring";
-   const char src[]  = "newstring";
+// int main () {
+//    char dest[] = "oldstring";
+//    const char src[]  = "newstring";
 
-   printf("Before memmove dest = %s, src = %s\n", dest, src);
-   ft_memmove(dest, src, 9);
-   printf("After memmove dest = %s, src = %s\n", dest, src);
+//    printf("Before memmove dest = %s, src = %s\n", dest, src);
+//    ft_memmove(dest, src, 9);
+//    printf("After memmove dest = %s, src = %s\n", dest, src);
 
-   return(0);
-}
+//    return(0);
+// }

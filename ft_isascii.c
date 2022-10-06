@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/22 18:58:47 by hualhash          #+#    #+#             */
-/*   Updated: 2022/09/24 20:16:52 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/04 22:36:58 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,19 +22,19 @@ int ft_isascii (int c)
     }
     
 }
-#include <stdio.h>
-#include <ctype.h>
+// #include <stdio.h>
+// #include <ctype.h>
  
-int main(void)
-{
-   int ch;
+// int main(void)
+// {
+//    int ch;
  
-   for (ch = 0x7c; ch <= 0x82; ch++) {
-      printf("%#04x    ", ch);
-      if (isascii(ch))
-         printf("The character is %c\n", ch);
-      else
-         printf("Cannot be represented by an ASCII character\n");
-   }
-   return 0;
-}
+//    for (ch = 0x7c; ch <= 0x82; ch++) {
+//       printf("%#04x    ", ch);
+//       if (isascii(ch))
+//          printf("The character is %c\n", ch);
+//       else
+//          printf("Cannot be represented by an ASCII character\n");
+//    }
+//    return 0;
+// }

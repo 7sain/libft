@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:37:28 by hualhash          #+#    #+#             */
-/*   Updated: 2022/09/25 23:06:13 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/06 23:24:53 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	i = 0;
 	p_dst = (char *)dst;
 	p_src = (char *)src;
+	if (!dst && !src)
+		return (0);
 	while (i < n)
 	{
 		p_dst[i] = p_src[i];
@@ -29,12 +31,12 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	return (dst);
 }
 
-int main () {
-   const char src[50] = "http://www.tutorialspoint.com";
-   char dest[50];
-   strcpy(dest,"Heloooo!!");
-   printf("Before memcpy dest = %s\n", dest);
-   ft_memcpy(dest, src, strlen(src)+1);
-   printf("After memcpy dest = %s\n", dest);
-   return (0);
-}
+// int main () {
+//    const char src[50] = "http://www.tutorialspoint.com";
+//    char dest[50];
+//    strcpy(dest,"Heloooo!!");
+//    printf("Before memcpy dest = %s\n", dest);
+//    ft_memcpy(dest, src, strlen(src)+1);
+//    printf("After memcpy dest = %s\n", dest);
+//    return (0);
+// }

@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:38:39 by hualhash          #+#    #+#             */
-/*   Updated: 2022/09/25 17:24:52 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/04 22:37:57 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,14 +23,14 @@ size_t	ft_strlen(const char *s)
 }
 
 
-int main()
-{
-    char a[20]="Husain";
-    char b[20]={'P','r','o','g','r','a','m','\0'};
+// int main()
+// {
+//     char a[20]="Husain";
+//     char b[20]={'P','r','o','g','r','a','m','\0'};
 
-    // using the %zu format specifier to print size_t
-    printf("Length of string a = %zu \n",ft_strlen(a));
-    printf("Length of string b = %zu \n",ft_strlen(b));
+//     // using the %zu format specifier to print size_t
+//     printf("Length of string a = %zu \n",ft_strlen(a));
+//     printf("Length of string b = %zu \n",ft_strlen(b));
 
-    return 0;
-}
+//     return 0;
+// }

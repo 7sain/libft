@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 21:06:54 by hualhash          #+#    #+#             */
-/*   Updated: 2022/09/28 21:08:58 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/04 22:37:44 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,12 @@ char *ft_strjoin(char const *s1, char const *s2)
 	return (str);
 }
 
-int main()
-{
-	char s1[] = "Husain ";
-	char s2[] = "Alhashmi";
+// int main()
+// {
+// 	char s1[] = "Husain ";
+// 	char s2[] = "Alhashmi";
 
-	printf("%s\n", ft_strjoin(s1, s2));
+// 	printf("%s\n", ft_strjoin(s1, s2));
 
-	return 0;
-}
+// 	return 0;
+// }

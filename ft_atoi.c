@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:31:08 by hualhash          #+#    #+#             */
-/*   Updated: 2022/09/26 15:04:20 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/04 22:36:09 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,18 +32,17 @@ int ft_atoi(const char *str)
 	}
 	return (res * sign);
 }
-
-int main () {
-   int val;
-   char str[20];
+// int main () {
+//    int val;
+//    char str[20];
    
-   strcpy(str, "12abc");
-   val = ft_atoi(str);
-   printf("mine String value = %s, mine Int value = %d\n", str, val);
+//    strcpy(str, "12abc");
+//    val = ft_atoi(str);
+//    printf("mine String value = %s, mine Int value = %d\n", str, val);
 
-   strcpy(str, "12abc");
-   val = atoi(str);
-   printf("there String value = %s, there Int value = %d\n", str, val);
+//    strcpy(str, "12abc");
+//    val = atoi(str);
+//    printf("there String value = %s, there Int value = %d\n", str, val);
 
-   return(0);
-}
+//    return(0);
+// }

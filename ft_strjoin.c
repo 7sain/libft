@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 21:06:54 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/04 22:37:44 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/09 19:43:51 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,16 @@ char *ft_strjoin(char const *s1, char const *s2)
 	size_t	s1_len;
 	size_t	s2_len;
 
-	s1_len = strlen(s1);
-	s2_len = strlen(s2);
+	if (!s1 || !s2)
+		return (0);
+	s1_len = ft_strlen(s1);
+	s2_len = ft_strlen(s2);
 	if (!s1 || !s2)
 		return (NULL);
 	if (!(str = (char*)malloc(sizeof(char) * (s1_len + s2_len + 1))))
 		return (0);
-	strlcpy(str, s1, s1_len + 1);
-	strlcat(str + (s1_len), s2, s2_len + 1);
+	ft_strlcpy(str, s1, s1_len + 1);
+	ft_strlcat(str + (s1_len), s2, s2_len + 1);
 	return (str);
 }
 

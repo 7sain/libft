@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:38:47 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/04 22:38:08 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/09 19:42:20 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strrchr(const char *s, int c)
 	int	i;
 
 	str = (char *)s;
-	i = strlen(s);
+	i = ft_strlen(s);
 	while (i >= 0)
 	{
 		if (str[i] == c)

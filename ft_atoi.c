@@ -6,16 +6,16 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:31:08 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/04 22:36:09 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/09 18:53:39 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
-	int res;
-	int	sign;
+	unsigned long long	res;
+	int					sign;
 
 	res = 0;
 	sign = 1;
@@ -28,6 +28,10 @@ int ft_atoi(const char *str)
 	while (*str >= '0' && *str <= '9')
 	{
 		res = res * 10 + *str - '0';
+		if(res > 9223372036854775807 && sign == 1)
+			return (-1);
+		else if(res > 9223372036854775807 && sign == -1)
+			return (0);
 		str++;
 	}
 	return (res * sign);
@@ -45,4 +49,16 @@ int ft_atoi(const char *str)
 //    printf("there String value = %s, there Int value = %d\n", str, val);
 
 //    return(0);
+// }
+
+// #include <string.h>
+// #include <stdio.h>
+
+
+// int main (int ac, char **av)
+// {
+// 	(void)ac;
+// 	printf("our atoy :  %d \n",ft_atoi(av[1]));
+// 	printf("real atoy :  %d \n",atoi(av[1]));
+// 	return (0);
 // }

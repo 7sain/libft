@@ -1,1 +1,1 @@
-+ 1
+strcpy(buffer,first);

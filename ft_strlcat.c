@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:37:38 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/06 23:39:17 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/09 19:40:05 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,24 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	size_t	len_dst;
-	size_t	len_src;
+	size_t	i;
+	size_t	j;
 
+	i = 0;
+	j = 0;
 	if (!dstsize)
 		return (0);
-	len_dst = strlen(dst);
-	len_src = strlen(src);
-	if (dstsize <= len_dst)
-		return (len_src + dstsize);
-	else
-		strncat (dst, (char *)src, dstsize - len_dst - 1);
-	return (len_dst + len_src);
+	while (dst[i] && i < dstsize)
+		i++;
+	while (src[j] && (i + j + 1) < dstsize)
+	{
+		dst[i + j] = src[j];
+		j++;
+	}
+	if (i < dstsize)
+		dst[i + j] = '\0';
+	return (i + ft_strlen(src));
+
 }
 
 // int main()

@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:37:41 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/07 01:21:15 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/09 19:01:21 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	len;
 
-	if (!dst || !src)
-	{
-		return (0);
-	}
 	len = 0;
 	if (dstsize != 0)
 	{
@@ -30,7 +26,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 		}
 		dst[len] = '\0';
 	}
-	return (strlen(src));
+	return (ft_strlen(src));
 }
 
 // int		main(void)

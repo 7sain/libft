@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:38:45 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/06 23:43:14 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/09 19:42:43 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		return ((char *)haystack);
 	if (!len)
 		return (0);
-	i = strlen(needle);
+	i = ft_strlen(needle);
 	while (*haystack && i <= len)
 	{
-		if (!(strncmp((char *)haystack, (char *)needle, i)))
+		if (!(ft_strncmp((char *)haystack, (char *)needle, i)))
 			return ((char *)haystack);
 		len--;
 		haystack++;

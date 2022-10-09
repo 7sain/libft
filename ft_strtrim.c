@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 14:49:29 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/04 22:38:12 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/09 19:44:55 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,14 +22,14 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (s1 != 0 && set != 0)
 	{
 		front = 0;
-		back = strlen(s1);
-		while (s1[front] && strchr(set, s1[front]))
+		back = ft_strlen(s1);
+		while (s1[front] && ft_strchr(set, s1[front]))
 		front++;
-		while (s1[back - 1] && strchr(set, s1[back - 1]) && back > front)
+		while (s1[back - 1] && ft_strchr(set, s1[back - 1]) && back > front)
 		back--;
 		str = (char*)malloc(sizeof(char) * (back - front + 1));
 		if (str)
-			strlcpy(str, &s1[front], back - front + 1);
+			ft_strlcpy(str, &s1[front], back - front + 1);
 	}
 	return (str);
 }

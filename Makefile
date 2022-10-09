@@ -6,7 +6,7 @@
 #    By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/04 22:50:03 by hualhash          #+#    #+#              #
-#    Updated: 2022/10/09 22:00:31 by hualhash         ###   ########.fr        #
+#    Updated: 2022/10/09 22:20:46 by hualhash         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,10 +45,11 @@ FILES = ft_memset \
 		ft_strjoin \
 		ft_strtrim \
 		ft_itoa \
-		ft_putchar_fd \
+		ft_striteri \
 		ft_putstr_fd \
 		ft_putendl_fd \
 		ft_putnbr_fd \
+		ft_putchar_fd
 
 SRCS_DIR = ./
 SRCS = $(addprefix $(SRCS_DIR), $(addsuffix .c, $(FILES)))

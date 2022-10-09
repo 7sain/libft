@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 20:02:44 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/09 20:07:44 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/09 22:16:15 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 void	ft_putstr_fd(char *s, int fd)
 {
 	if (!s || fd < 0)
-		return (0);
+		return;
 	write(fd, s, ft_strlen(s));
 }

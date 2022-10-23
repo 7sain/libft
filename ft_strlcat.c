@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:37:38 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/09 19:40:05 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/23 19:37:45 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 
 	i = 0;
 	j = 0;
-	if (!dstsize)
+	if (!dstsize && !dst)
 		return (0);
 	while (dst[i] && i < dstsize)
 		i++;
@@ -31,7 +31,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	if (i < dstsize)
 		dst[i + j] = '\0';
 	return (i + ft_strlen(src));
-
 }
 
 // int main()
@@ -39,7 +38,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 //     char first[] = "This is ";
 //     char last[] = "a potentially long string";
 //     int r;
-//     int size = 16;
+//     int size = 0;
 //     char buffer[size];
 
 //     strcpy(buffer,first);

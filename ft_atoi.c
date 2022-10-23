@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:31:08 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/09 18:53:39 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/19 20:12:24 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,9 @@ int	ft_atoi(const char *str)
 	while (*str >= '0' && *str <= '9')
 	{
 		res = res * 10 + *str - '0';
-		if(res > 9223372036854775807 && sign == 1)
+		if (res > 9223372036854775807 && sign == 1)
 			return (-1);
-		else if(res > 9223372036854775807 && sign == -1)
+		else if (res > 9223372036854775807 && sign == -1)
 			return (0);
 		str++;
 	}
@@ -39,7 +39,6 @@ int	ft_atoi(const char *str)
 // int main () {
 //    int val;
 //    char str[20];
-   
 //    strcpy(str, "12abc");
 //    val = ft_atoi(str);
 //    printf("mine String value = %s, mine Int value = %d\n", str, val);
@@ -53,7 +52,6 @@ int	ft_atoi(const char *str)
 
 // #include <string.h>
 // #include <stdio.h>
-
 
 // int main (int ac, char **av)
 // {

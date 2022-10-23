@@ -6,7 +6,7 @@
 #    By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/04 22:50:03 by hualhash          #+#    #+#              #
-#    Updated: 2022/10/09 22:20:46 by hualhash         ###   ########.fr        #
+#    Updated: 2022/10/19 19:23:23 by hualhash         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,6 +49,8 @@ FILES = ft_memset \
 		ft_putstr_fd \
 		ft_putendl_fd \
 		ft_putnbr_fd \
+		ft_split \
+		ft_strmapi \
 		ft_putchar_fd
 
 SRCS_DIR = ./

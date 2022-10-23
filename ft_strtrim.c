@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 14:49:29 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/09 19:44:55 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/15 16:43:54 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 		front++;
 		while (s1[back - 1] && ft_strchr(set, s1[back - 1]) && back > front)
 		back--;
-		str = (char*)malloc(sizeof(char) * (back - front + 1));
+		str = (char *)malloc(sizeof(char) * (back - front + 1));
 		if (str)
 			ft_strlcpy(str, &s1[front], back - front + 1);
 	}

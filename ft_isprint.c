@@ -6,23 +6,21 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/22 21:10:13 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/04 22:37:07 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/15 16:27:39 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
-    if ( c >= 32 && c <= 126)
-    return (1);
-    else
-    {
-        return (0);
-    }
-    
+	if (c >= 32 && c <= 126)
+		return (1);
+	else
+	{
+		return (0);
+	}
 }
-
 
 // #include <ctype.h>
 // #include <stdio.h>

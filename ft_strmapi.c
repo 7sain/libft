@@ -1,42 +1,50 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/28 16:10:49 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/15 16:32:14 by hualhash         ###   ########.fr       */
+/*   Created: 2022/10/19 19:16:40 by hualhash          #+#    #+#             */
+/*   Updated: 2022/10/23 19:36:49 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	size_t	i;
 	size_t	len;
-	char	*out;
+	size_t	i;
+	char	*str;
 
 	i = 0;
-	len = ft_strlen(s1);
-	out = malloc(sizeof(char) * len + 1);
-	if (!out)
-		return (NULL);
-	while (i <= len)
+	if (!s || !f)
+		return (0);
+	len = ft_strlen(s);
+	str = (char *)malloc(sizeof(char) * (len + 1));
+	if (!str)
+		return (0);
+	while (i < len)
 	{
-		out[i] = s1[i];
+		str[i] = f(i, s[i]);
 		i++;
 	}
-	return (out);
+	str[i] = '\0';
+	return (str);
 }
+
+// char f(unsigned int i, char c)
+// {
+// 	char str;
+// 	str = c + 2;
+// 	return (str);
+// }
 
 // int main()
 // {
-//     char source[] = "GeeksForGeeks";
-//     // A copy of source is created dynamically
-//     // and pointer to copy is returned.
-//     char* target = ft_strdup(source);
-//     printf("%s", target);
-//     return 0;
+// 	char str1[] = "abc";
+// 	char* str2;
+// 	str2 = ft_strmapi(str1, *f);
+// 	printf("%s\n", str2);
 // }

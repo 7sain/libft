@@ -6,30 +6,33 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 20:22:40 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/04 22:38:16 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/23 19:41:41 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;
 	size_t	j;
-	char* sub;
+	char	*sub;
 
-	i = 0;
-	j = 0;
-	if (!s || !(sub = (char*)malloc(sizeof(char) * (len + 1))))
+	if (!s)
 		return (NULL);
-	while (s[i])
+	if (start > ft_strlen(s))
+		return (ft_strdup(""));
+	i = ft_strlen(s + start);
+	if (i < len)
+		len = i;
+	sub = (char *)malloc(sizeof(char) * (len + 1));
+	if (!sub)
+		return (NULL);
+	j = 0;
+	while (j < len)
 	{
-		if (i >= start && j < len)
-		{
-			sub[j] = s[i];
-			j++;
-		}
-		i++;
+		sub[j] = s[start + j];
+		j++;
 	}
 	sub[j] = '\0';
 	return (sub);
@@ -39,8 +42,8 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
 // {
 // 	char* str;
 
-// 	str = ft_substr("Hello, 42Seoul!", 0, 15);
-// 	printf("%s\n", str);
+// 	str = ft_substr("Hello", 0, 15);
+// 	printf("Before: %s\n", str);
 
 // 	return 0;
 // }

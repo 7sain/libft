@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 21:44:44 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/09 22:17:21 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/15 16:31:25 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	ft_putnbr_fd(int n, int fd)
 	{
 		ft_putnbr_fd(n / 10, fd);
 		write(fd, "8", 1);
-			return;
+		return ;
 	}
 	else if (n < 0)
 	{

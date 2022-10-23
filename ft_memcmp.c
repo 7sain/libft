@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:37:23 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/06 23:31:03 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/15 16:37:58 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*ss1;
 	unsigned char	*ss2;
 
@@ -49,6 +49,6 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 //    } else {
 //       printf("str1 is equal to str2");
 //    }
-   
+
 //    return(0);
 // }

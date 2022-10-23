@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/15 16:52:12 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/19 20:14:12 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/23 20:28:57 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,7 +100,6 @@ char	**ft_split(char const *s, char c)
 // {
 // 	int i = 0;
 // 	char **tab;
-		
 // 	tab = ft_split("12314561789", '1');
 // 	while (i < 4)
 // 	{

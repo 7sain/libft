@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:38:42 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/04 22:38:00 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/23 20:28:34 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,9 +43,11 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 //    result = ft_strncmp(str1, str2, 3);
 
 //    if(result > 0) {
-//       printf("ASCII value of first unmatched character of str1 is greater than str2");
+//       printf("ASCII value of first
+//unmatched character of str1 is greater than str2");
 //    } else if(result < 0) {
-//       printf("ASCII value of first unmatched character of str1 is less than str2");
+//       printf("ASCII value of first
+//unmatched character of str1 is less than str2");
 //    } else {
 //       printf("Both the strings str1 and str2 are equal");
 //    }

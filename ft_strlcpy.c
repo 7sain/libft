@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:37:41 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/09 19:01:21 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/23 20:30:02 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,4 +42,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 //  	printf("%zu\n", strlcpy(dest, src, size));
 //  	printf(".%s.\n\n", dest);
 //  }
-

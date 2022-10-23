@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:38:47 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/19 21:38:29 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/23 20:28:43 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,5 @@ char	*ft_strrchr(const char *s, int c)
 //    ret = ft_strrchr(str, ch);
 
 //    printf("String after |%c| is - |%s|\n", ch, ret);
-   
 //    return(0);
 // }

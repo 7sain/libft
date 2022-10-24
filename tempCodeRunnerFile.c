@@ -1,14 +1,11 @@
-#include <stdio.h>
-#include <ctype.h>
-int main(void)
+int main () 
 {
-   int ch;
-   for (ch = 0x7c; ch <= 0x82; ch++) {
-      printf("%#04x    ", ch);
-      if (isascii(ch))
-         printf("The character is %c\n", ch);
-      else
-         printf("Cannot be represented by an ASCII character\n");
-   }
-   return 0;
+   char dest[] = "oldstring";
+   const char src[]  = "newstring";
+
+   printf("Before memmove dest = %s, src = %s\n", dest, src);
+   ft_memmove(dest, src, 9);
+   printf("After memmove dest = %s, src = %s\n", dest, src);
+
+   return(0);
 }

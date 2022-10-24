@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+        */
+/*   By: hualhash <hualhash@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:37:30 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/23 20:29:03 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/24 16:55:48 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,27 +18,25 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	char	*p_dst;
 	char	*p_src;
 
-	i = 0;
 	p_dst = (char *)dst;
 	p_src = (char *)src;
 	if (!dst && !src)
-		return (0);
-	if (p_dst > p_src)
-		while (len > 0)
-		{
-		p_dst[len - 1] = p_src[len - 1];
-		len--;
-		}
+		return (NULL);
+	if (dst < src)
+		ft_memcpy(dst, src, len);
 	else
-		while (i < len)
-		{
+	{
+		i = len;
+		while (i--)
 		p_dst[i] = p_src[i];
-		i++;
-		}
+	}
 	return (dst);
 }
 
-// int main () {
+// #include <stdio.h>
+
+// int main () 
+// {
 //    char dest[] = "oldstring";
 //    const char src[]  = "newstring";
 

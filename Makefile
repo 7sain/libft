@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: hualhash <hualhash@student.42.fr>          +#+  +:+       +#+         #
+#    By: hualhash <hualhash@student.42abudhabi.a    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/04 22:50:03 by hualhash          #+#    #+#              #
-#    Updated: 2022/10/19 19:23:23 by hualhash         ###   ########.fr        #
+#    Updated: 2022/10/24 16:57:01 by hualhash         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 

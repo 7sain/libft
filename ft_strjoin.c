@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 21:06:54 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/24 16:56:19 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/24 20:23:58 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,28 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*str;
-	size_t	s1_len;
-	size_t	s2_len;
+	size_t	i;
+	size_t	z;
+	char	*blank;
+	char	len;
 
-	if (!s1 || !s2)
-		return (0);
-	s1_len = ft_strlen(s1);
-	s2_len = ft_strlen(s2);
+	i = 0;
+	z = 0;
 	if (!s1 || !s2)
 		return (NULL);
-	str = (char *)malloc(sizeof(char) * (s1_len + s2_len + 1));
-	if (!str)
-		return (0);
-	ft_strlcpy(str, s1, s1_len + 1);
-	ft_strlcat(str + (s1_len), s2, s2_len + 1);
-	return (str);
+	len = ft_strlen(s1) + ft_strlen(s2);
+	blank = (char *)malloc(sizeof(char) * (len + 1));
+	if (!(blank))
+		return (NULL);
+	while (s1[i] != '\0')
+	{
+		blank[i] = s1[i];
+		i++;
+	}
+	while (s2[z] != '\0')
+		blank[i++] = s2[z++];
+	blank[i] = '\0';
+	return (blank);
 }
 
 // int main()

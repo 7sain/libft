@@ -6,7 +6,7 @@
 #    By: hualhash <hualhash@student.42abudhabi.a    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/04 22:50:03 by hualhash          #+#    #+#              #
-#    Updated: 2022/10/24 16:57:01 by hualhash         ###   ########.fr        #
+#    Updated: 2022/10/24 21:43:40 by hualhash         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -55,11 +55,9 @@ FILES = ft_memset \
 
 SRCS_DIR = ./
 SRCS = $(addprefix $(SRCS_DIR), $(addsuffix .c, $(FILES)))
-SRCS_B = $(addprefix $(SRCS_DIR), $(addsuffix .c, $(FILES_B)))
 
 OBJS_DIR = ./
 OBJS = $(addprefix $(OBJS_DIR), $(addsuffix .o, $(FILES)))
-OBJS_B = $(addprefix $(OBJS_DIR), $(addsuffix .o, $(FILES_B)))
 
 
 .c.o: $(SRCS)
@@ -68,8 +66,6 @@ OBJS_B = $(addprefix $(OBJS_DIR), $(addsuffix .o, $(FILES_B)))
 $(NAME): $(OBJS)
 	$(AR) $@ $^
 
-bonus: $(OBJS_B)
-	$(AR) $(NAME) $^
 
 all: $(NAME)
 

@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:37:28 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/24 16:55:45 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/24 21:49:44 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	char	*p_src;
 
 	i = 0;
-	p_dst = (char *)dst;
+	p_dst = dst;
 	p_src = (char *)src;
 	if (!dst && !src)
 		return (0);

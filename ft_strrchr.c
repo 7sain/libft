@@ -6,9 +6,11 @@
 /*   By: hualhash <hualhash@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:38:47 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/24 16:56:40 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/25 15:47:45 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// locates the first occurrence of c(ftom the right).
 
 #include "libft.h"
 
@@ -31,8 +33,8 @@ char	*ft_strrchr(const char *s, int c)
 }
 
 // int main () {
-//    const char str[] = "http://www.tutorialspoint.com";
-//    const char ch = 'c';
+//    const char str[] = "Husain Faisal Alhashmi";
+//    const char ch = 's';
 //    char *ret;
 
 //    ret = ft_strrchr(str, ch);

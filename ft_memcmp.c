@@ -6,9 +6,11 @@
 /*   By: hualhash <hualhash@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:37:23 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/24 21:57:07 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/25 13:49:49 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// compares byte s1 & s2.
 
 #include "libft.h"
 

@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:37:41 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/24 16:56:26 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/25 17:01:21 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 //  	char	*src;
 //  	int		size;
 
-//  	src = "";
-//  	size = 0;
+//  	src = "Husain Faisal Alhashmi";
+//  	size = 23;
 //  	printf("%zu\n", ft_strlcpy(dest, src, size));
 //  	printf(".%s.\n\n", dest);
 //  	printf("%zu\n", strlcpy(dest, src, size));

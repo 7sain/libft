@@ -6,9 +6,11 @@
 /*   By: hualhash <hualhash@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:37:20 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/24 21:53:10 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/25 14:03:28 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// locates the first occurrence of c within size n.
 
 #include "libft.h"
 
@@ -34,11 +36,11 @@ void	*ft_memchr(const void *s, int c, size_t n)
 }
 
 // int main () {
-//    const char str[] = "http://www.tutorialspoint.com";
-//    const char ch = 'w';
+//    const char str[] = "Husain Faisal Alhashmi.";
+//    const char ch = 's';
 //    char *ret;
 
-//    ret = ft_memchr(str, ch, strlen(str));
+//    ret = ft_memchr(str, ch, 2);
 
 //    printf("String after |%c| is - |%s|\n", ch, ret);
 

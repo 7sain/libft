@@ -6,9 +6,11 @@
 /*   By: hualhash <hualhash@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:38:45 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/24 16:56:38 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/25 15:44:45 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// search for a needle inside haystack and print it.
 
 #include "libft.h"
 
@@ -34,7 +36,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 // int main()
 
 // {
-// 	char str1[] = "crcrakplaro";
-// 	char str2[] = "cra";
+// 	char str1[] = "Husain Faisl Alhashmi";
+// 	char str2[] = "Al";
 // 	printf("%s\n", ft_strnstr(str1, str2, 58));
 // }

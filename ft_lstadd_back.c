@@ -1,37 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hualhash <hualhash@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/24 16:38:39 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/25 14:46:06 by hualhash         ###   ########.fr       */
+/*   Created: 2022/10/28 00:53:30 by hualhash          #+#    #+#             */
+/*   Updated: 2022/10/28 05:09:21 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// length of the string.
-
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	size_t	i;
+	t_list	*tmp;
 
-	i = 0;
-	while (s[i] != 0)
-	i++;
-	return (i);
+	if (!lst)
+		return ;
+	if (!*lst)
+	{
+		*lst = new;
+		return ;
+	}
+	tmp = *lst;
+	// while (tmp->next != NULL)
+	// {
+	// 	tmp = tmp->next;
+	// }
+	while (tmp->next)
+		tmp = tmp->next;
+	tmp->next = new;
 }
-
-// int main()
-// {
-//     char a[20]="Husain";
-//     char b[20]={'P','r','o','g','r','a','m','\0'};
-
-//     // using the %zu format specifier to print size_t
-//     printf("Length of string a = %zu \n",ft_strlen(a));
-//     printf("Length of string b = %zu \n",ft_strlen(b));
-
-//     return 0;
-// }

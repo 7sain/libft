@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:37:38 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/24 16:56:23 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/25 17:01:14 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,14 +35,14 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 
 // int main()
 // {
-//     char first[] = "This is ";
+//    char first[] = "This is ";
 //     char last[] = "a potentially long string";
 //     int r;
-//     int size = 0;
+//     int size = 16;
 //     char buffer[size];
 
 //     strcpy(buffer,first);
-//     r = ft_strlcat(buffer,last,size);
+//     r = strlcat(buffer,last,size);
 
 //     puts(buffer);
 //     printf("Value returned: %d\n",r);
@@ -52,4 +52,5 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 //         puts("String was fully copied");
 
 //     return(0);
+
 // }

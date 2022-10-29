@@ -1,37 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hualhash <hualhash@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/24 16:38:39 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/25 14:46:06 by hualhash         ###   ########.fr       */
+/*   Created: 2022/10/26 19:37:39 by hualhash          #+#    #+#             */
+/*   Updated: 2022/10/28 03:16:17 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// length of the string.
-
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
-{
-	size_t	i;
-
-	i = 0;
-	while (s[i] != 0)
-	i++;
-	return (i);
-}
-
-// int main()
+// t_list	*ft_lstlast(t_list *lst)
 // {
-//     char a[20]="Husain";
-//     char b[20]={'P','r','o','g','r','a','m','\0'};
-
-//     // using the %zu format specifier to print size_t
-//     printf("Length of string a = %zu \n",ft_strlen(a));
-//     printf("Length of string b = %zu \n",ft_strlen(b));
-
-//     return 0;
+// 	if (!lst)
+// 		return (0);
+// 	while (lst->next != NULL)
+// 		lst = lst->next;
+// 	return (lst);
 // }
+
+t_list	*ft_lstlast(t_list *lst)
+{
+	if (lst)
+		while (lst->next)
+			lst = lst->next;
+	return (lst);
+}

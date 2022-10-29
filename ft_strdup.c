@@ -6,9 +6,11 @@
 /*   By: hualhash <hualhash@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 16:10:49 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/24 16:56:12 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/25 14:06:19 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//  allocate enough memory to hold the old string.
 
 #include "libft.h"
 

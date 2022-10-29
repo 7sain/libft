@@ -6,9 +6,11 @@
 /*   By: hualhash <hualhash@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/02 15:40:11 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/24 16:55:36 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/25 13:47:50 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// converts an integer to a string.
 
 #include "libft.h"
 

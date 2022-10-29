@@ -6,9 +6,11 @@
 /*   By: hualhash <hualhash@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:37:28 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/24 21:49:44 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/25 13:51:12 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// copies n bytes from memory area src to memory area dst.
 
 #include "libft.h"
 

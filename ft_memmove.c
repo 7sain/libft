@@ -6,9 +6,11 @@
 /*   By: hualhash <hualhash@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:37:30 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/24 17:54:47 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/10/25 13:51:45 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// copies len bytes from string src to string dst
 
 #include "libft.h"
 

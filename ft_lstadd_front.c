@@ -1,37 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hualhash <hualhash@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/24 16:38:39 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/25 14:46:06 by hualhash         ###   ########.fr       */
+/*   Created: 2022/10/26 18:36:20 by hualhash          #+#    #+#             */
+/*   Updated: 2022/10/28 02:35:03 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// length of the string.
-
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	size_t	i;
-
-	i = 0;
-	while (s[i] != 0)
-	i++;
-	return (i);
+	new->next = *lst;
+	*lst = new;
 }
-
-// int main()
-// {
-//     char a[20]="Husain";
-//     char b[20]={'P','r','o','g','r','a','m','\0'};
-
-//     // using the %zu format specifier to print size_t
-//     printf("Length of string a = %zu \n",ft_strlen(a));
-//     printf("Length of string b = %zu \n",ft_strlen(b));
-
-//     return 0;
-// }

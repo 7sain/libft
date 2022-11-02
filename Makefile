@@ -6,7 +6,7 @@
 #    By: hualhash <hualhash@student.42abudhabi.a    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/04 22:50:03 by hualhash          #+#    #+#              #
-#    Updated: 2022/10/28 01:31:47 by hualhash         ###   ########.fr        #
+#    Updated: 2022/11/01 16:41:02 by hualhash         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ SRCS =	ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c\
 		ft_split.c ft_substr.c ft_itoa.c ft_putchar_fd.c ft_putstr_fd.c\
 		ft_putendl_fd.c ft_putnbr_fd.c ft_strmapi.c ft_striteri.c\
 
-SRCSB = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c\
+SRCSB = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c\
 
 OBJSB = $(SRCSB:c=o)
 

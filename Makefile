@@ -6,11 +6,13 @@
 #    By: hualhash <hualhash@student.42abudhabi.a    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/04 22:50:03 by hualhash          #+#    #+#              #
-#    Updated: 2022/11/03 22:19:34 by hualhash         ###   ########.fr        #
+#    Updated: 2022/11/05 17:34:17 by hualhash         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
+
+CC = gcc
 
 CFLAGS = -Wall -Wextra -Werror
 

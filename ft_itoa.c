@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/02 15:40:11 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/25 13:47:50 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/11/11 21:27:10 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ size_t	ft_nb_len(int nb)
 	while (nb)
 	{
 		len++;
-		nb = nb / 10;
+		nb /= 10;
 	}
 	return (len);
 }
@@ -43,7 +43,7 @@ char	*ft_itoa(int n)
 	if (nb < 0)
 	{
 		str[0] = '-';
-		nb = -nb;
+		nb *= -1;
 	}
 	if (nb == 0)
 		str[0] = '0';
@@ -52,14 +52,17 @@ char	*ft_itoa(int n)
 	{
 		str[len] = nb % 10 + '0';
 		len--;
-		nb = nb / 10;
+		nb /= 10;
 	}
 	return (str);
 }
-
+//469
 // int	main(void)
 // {
-// 	printf("%s\n", ft_itoa(0));
-// 	printf("%s\n", ft_itoa(987654321));
-// 	printf("%s\n", ft_itoa(-123456789));
+// 	printf("%s\n", ft_itoa(-21)); 
+// 	// printf("%s\n", ft_itoa(987654321));
+// 	// printf("%s\n", ft_itoa(-123456789));
 // }
+
+// 	// printf("hassian is gay , n == %d\n", n);
+// 	// printf("hassian is gay , len == %d\n", len);

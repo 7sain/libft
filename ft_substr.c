@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 20:22:40 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/24 16:56:47 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/11/12 18:50:49 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 // {
 // 	char* str;
 
-// 	str = ft_substr("Hello", 0, 15);
+// 	str = ft_substr("Hello", 4, 1);
 // 	printf("Before: %s\n", str);
 
 // 	return 0;

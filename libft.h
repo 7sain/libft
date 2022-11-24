@@ -6,7 +6,7 @@
 /*   By: hualhash <hualhash@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/24 16:38:57 by hualhash          #+#    #+#             */
-/*   Updated: 2022/10/30 22:58:46 by hualhash         ###   ########.fr       */
+/*   Updated: 2022/11/24 19:43:46 by hualhash         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 # include <stdlib.h>
 # include <stddef.h>
 # include <string.h>
-# include <stdio.h>
 
 typedef struct s_list
 {
